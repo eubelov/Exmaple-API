@@ -1,4 +1,4 @@
-This is an example of a REST API following the best API design pacticies
+This is an example of a REST API following the best API design practicies
 
 The following technologies/libraries are utilized:
 

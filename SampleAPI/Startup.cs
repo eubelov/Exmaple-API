@@ -229,6 +229,7 @@ namespace SampleAPI
                     {
                         endpoints.MapControllers();
                         endpoints.MapMetrics();
+                        endpoints.MapHealthChecks("/hc");
                     });
         }
 

@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SampleAPI</name>
+    </assembly>
+    <members>
+        <member name="M:SampleAPI.Controllers.SubscriptionsController.GetSubscription(System.Guid)">
+             <summary>
+             Gets user's subscription by its ID.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /2681BDFF-7077-44B9-895C-8CE8B7942CB0
+            
+             </remarks>
+             <param name="subscriptionId">ID of user's subscription.</param>
+             <returns>User's subscription.</returns>
+             <response code="200">User's subscription.</response>
+             <response code="404">Requested resource does not exist.</response>
+        </member>
+        <member name="T:SampleAPI.Controllers.UsersController">
+            <summary>
+            Provides users management capabilities.
+            </summary>
+        </member>
+        <member name="M:SampleAPI.Controllers.UsersController.Get">
+             <summary>
+             Gets current user's profile.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /users
+            
+             </remarks>
+             <returns>A newly created employee.</returns>
+             <response code="200">Profile of the current user.</response>
+        </member>
+        <member name="M:SampleAPI.Controllers.UsersController.GetById(System.Guid)">
+             <summary>
+             Gets user's profile by its ID.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 GET /users/2F2FBF7C-3EBD-4B41-BAC1-7B70EA9554A3
+            
+             </remarks>
+             <param name="userId">User's profile.</param>
+             <returns>Profile of the user.</returns>
+             <response code="200">Profile of the requested user.</response>
+             <response code="404">User with provided ID doesn't not exist.</response>
+        </member>
+        <member name="M:SampleAPI.Controllers.UsersController.Update(SampleAPI.Models.Update.UserProfileUpdateForm)">
+             <summary>
+             Updates current user's profile.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /users
+                 {
+                     "phoneNumber": "18008945454"
+                 }
+            
+             </remarks>
+             <param name="updateForm">User profile's update model.</param>
+             <returns>Updated user's profile.</returns>
+             <response code="200">Profile of the user was updated.</response>
+             <response code="400">Some of the supplied properties are invalid.</response>
+        </member>
+        <member name="M:SampleAPI.Controllers.UsersController.Create(SampleAPI.Models.Create.UserCreateForm)">
+             <summary>
+             Creates a new user.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /users
+                 {
+                     "name": "Super User",
+                     "phoneNumber" : "+19854764875"
+                 }
+            
+             </remarks>
+             <param name="createForm">User creation form.</param>
+             <returns>A newly created user.</returns>
+             <response code="201">User created successfully.</response>
+             <response code="400">Some of the supplied properties are invalid.</response>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:SampleAPI.Controllers.UsersController.GetSubscriptions(System.Guid,System.UInt32,System.UInt32)" -->
+        <member name="M:SampleAPI.Controllers.UsersController.Delete(System.Guid)">
+             <summary>
+             Deletes the user.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 DELETE /users/06876152-2CEA-4750-8584-1D710921C7E7
+            
+             </remarks>
+             <param name="userId">ID of the user to delete.</param>
+             <response code="204">User deleted successfully.</response>
+             <response code="404">User does not exist.</response>
+        </member>
+    </members>
+</doc>

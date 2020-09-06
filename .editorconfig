@@ -1,0 +1,25 @@
+﻿[*.cs]
+
+# SA1124: Do not use regions
+dotnet_diagnostic.SA1124.severity = none
+
+# SA0001: XML comment analysis is disabled due to project configuration
+dotnet_diagnostic.SA0001.severity = none
+
+# SA1516: Elements should be separated by blank line
+dotnet_diagnostic.SA1516.severity = warning
+
+[2020*.cs]
+generated_code = true
+
+[ApplicationDbContextModelSnapshot.cs]
+generated_code = true
+
+[*.cs]
+guidelines = 140, 145
+
+# CS0612: Type or member is obsolete
+dotnet_diagnostic.CS0612.severity = none
+
+# SA1028: Code should not contain trailing whitespace
+dotnet_diagnostic.SA1028.severity = warning

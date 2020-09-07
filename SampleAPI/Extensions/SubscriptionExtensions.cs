@@ -5,7 +5,7 @@ using SampleAPI.Controllers;
 using SampleAPI.Models;
 using SampleAPI.Models.View;
 
-namespace SampleAPI.Ext
+namespace SampleAPI.Extensions
 {
     public static class SubscriptionExtensions
     {

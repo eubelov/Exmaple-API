@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 
 using SampleAPI.Auth;
-using SampleAPI.Ext;
+using SampleAPI.Extensions;
 using SampleAPI.Models.Common;
 using SampleAPI.Models.Create;
 using SampleAPI.Models.Update;

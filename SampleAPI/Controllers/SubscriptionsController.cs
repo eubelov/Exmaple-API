@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 
-using SampleAPI.Ext;
+using SampleAPI.Extensions;
 using SampleAPI.Models.View;
 
 #pragma warning disable 1998

@@ -43,7 +43,6 @@ namespace SampleAPI
                                 {
                                     options.Limits.MaxRequestBodySize = 5000000; // Max upload size is 5 Mb
                                     options.AddServerHeader = false;
-                                    //options.ConfigureEndpoints();
                                 });
                         webBuilder.UseStartup<Startup>();
                         webBuilder.UseIISIntegration();

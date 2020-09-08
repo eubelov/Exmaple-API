@@ -165,7 +165,7 @@ namespace SampleAPI.Controllers
         /// <remarks>
         /// Sample request:
         ///
-        ///     GET /users/2F2FBF7C-3EBD-4B41-BAC1-7B70EA9554A3?page=2&pageSize=20
+        ///     GET /users/2F2FBF7C-3EBD-4B41-BAC1-7B70EA9554A3?page=2
         ///
         /// </remarks>
         /// <param name="userId">ID of the user.</param>

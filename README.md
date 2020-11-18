@@ -1,16 +1,12 @@
-This is an example of a REST API following the best API design practicies
-
-The following technologies/libraries are utilized:
-
 - .NET Core 3.1
+- docker-compose
 - Auth0
 - Swagger
-- Polly
-- Prometheus
 - HATEOAS
+- Prometheus
+- Polly
 - AutoMapper
 - MediatR
 - Serilog + Graylog Sink
-- StyleCop
 - Health Checks
-- Docker (compose)
+- StyleCop

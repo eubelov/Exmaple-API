@@ -9,8 +9,11 @@ using MediatR;
 
 using Microsoft.AspNetCore.Mvc;
 
+using SampleAPI.Attributes;
+
 namespace SampleAPI.Controllers
 {
+    [VersionedEndpoint]
     public abstract class ApplicationControllerBase : ControllerBase
     {
         protected ApplicationControllerBase(IMapper mapper, IMediator mediator)

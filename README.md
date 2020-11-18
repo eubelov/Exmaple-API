@@ -1,4 +1,4 @@
-- .NET Core 3.1
+- .NET 5.0
 - docker-compose
 - Auth0
 - Swagger

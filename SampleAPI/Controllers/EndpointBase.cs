@@ -14,9 +14,9 @@ using SampleAPI.Attributes;
 namespace SampleAPI.Controllers
 {
     [VersionedEndpoint]
-    public abstract class ApplicationControllerBase : ControllerBase
+    public abstract class EndpointBase : ControllerBase
     {
-        protected ApplicationControllerBase(IMapper mapper, IMediator mediator)
+        protected EndpointBase(IMapper mapper, IMediator mediator)
         {
             this.Mapper = mapper;
             this.Mediator = mediator;

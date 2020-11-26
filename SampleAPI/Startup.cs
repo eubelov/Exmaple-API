@@ -81,9 +81,6 @@ namespace SampleAPI
                         config.AddPolicy(Policies.AuthenticatedUser, Policies.AnyAuthenticatedUserPolicy());
                         config.AddPolicy(Policies.User, Policies.UserPolicy());
                     });
-
-            services.AddHealthChecks()
-                .AddCheck("self", () => HealthCheckResult.Healthy());
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
@@ -114,6 +111,7 @@ namespace SampleAPI
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+
             app.UseEndpoints(
                 endpoints =>
                     {

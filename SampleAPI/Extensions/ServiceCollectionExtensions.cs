@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 using Polly;
 using Polly.Registry;
+
+using Prometheus;
 
 namespace SampleAPI.Extensions
 {
@@ -130,6 +133,13 @@ namespace SampleAPI.Extensions
                     });
 
             return services;
+        }
+
+        public static void AddHealthChecks(this IServiceCollection serviceCollection, IConfiguration configuration)
+        {
+            serviceCollection.AddHealthChecks()
+                .AddCheck("self", () => HealthCheckResult.Healthy())
+                .ForwardToPrometheus();
         }
     }
 }

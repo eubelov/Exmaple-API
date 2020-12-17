@@ -3,7 +3,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Identity.API.Controllers
+namespace Identity.API.Endpoints
 {
     [Authorize]
     [Route("validate")]

@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  identityapi:
+    ports:
+        - "5005:80"
+    env_file:
+        - auth.env
+    build:
+      context: ../.
+      dockerfile: Identity.API/Dockerfile

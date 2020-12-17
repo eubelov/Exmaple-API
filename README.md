@@ -1,8 +1,6 @@
 - .NET 5.0
-- docker-compose
-- Auth0
+- AspNet Identity
 - Swagger
-- HATEOAS
 - Prometheus
 - Polly
 - AutoMapper
